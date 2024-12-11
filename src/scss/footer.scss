@@ -1,0 +1,30 @@
+@import './variable.scss';
+
+footer {
+    border-top: 5px solid $primary-green;
+    font-size: 18px;
+    background-color: $black;
+
+    .footer__contactIcons {
+        font-size: 20px;
+
+        .footer__icon {
+            background-color: $grey;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 50%;
+            margin: 0 2px;
+        }
+
+        .footer__icon:hover {
+            color: $black;
+            background-color: $white;
+        }
+    }
+
+    p {
+        color: $fadeWhite;
+        text-align: center;
+    }
+
+}

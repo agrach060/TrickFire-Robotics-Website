@@ -1,0 +1,24 @@
+@import './variable.scss';
+
+#app {
+    background-color: $primary-black;
+    width: 100%;
+    min-height: 100vh;
+    color: $white;
+    overflow: hidden;
+
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $white;
+}
+
+.page {
+    min-height: 100vh;
+}

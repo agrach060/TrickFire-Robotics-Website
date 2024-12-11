@@ -1,0 +1,60 @@
+@import './variable.scss';
+
+nav {
+    background-color: $primary-green;
+    width: 100%;
+    z-index: 2;
+
+    .nav__burger {
+        display: none;
+
+        @media screen and (max-width:850px) {
+            display: block;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+
+        a:hover {
+            color: $white;
+        }
+
+        li {
+            width: fit-content;
+
+        }
+
+        /* the underline of active page*/
+        .navBar-activePage {
+            position: relative;
+        }
+
+        .navBar-activePage::before {
+            content: '';
+            position: absolute;
+            top: calc(100% - 3px);
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $white;
+
+            @media screen and (max-width:850px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            flex-direction: column;
+            margin-top: -100px !important;
+        }
+    }
+
+}

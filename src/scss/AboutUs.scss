@@ -1,0 +1,72 @@
+@import './variable.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+#about_us_header {
+    display: flex;
+    position: relative;
+    height: 100vh;
+
+    #about_us_header__background {
+        background-image: url(../assets/images/unslanted_team_photo_rmc_2017.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: $fadeBlack;
+        }
+    }
+
+    #about_us_header__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+
+        height: auto;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+
+        /*tablet*/
+        @media screen and (max-width:1000px) {
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+    h1 {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+}
+
+#about_us_section {
+
+    #about_us_rows {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 130px;
+        margin-top: 70px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 100px;
+    }
+
+}
