@@ -1,4 +1,4 @@
-# TrickfireRobotics.github.io
+# TrickfireRobotics.org
 
 The official website of the Trickfire Robotics Club, showcasing the team's projects and initiatives.
 
